@@ -3,7 +3,6 @@ import { Link, Routes, Route, useNavigate } from 'react-router-dom';
 import './manager.css';
 import ManagerHome from './ManagerHome';
 import AddEvent from './AddEvent';
-//import ViewEvents from './ViewEvents';
 import ViewBookings from './ViewBookings';
 import ManagerLogout from './ManagerLogout';
 
