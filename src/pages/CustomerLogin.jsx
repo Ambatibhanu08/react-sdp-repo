@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './style.css';
@@ -29,14 +30,16 @@ const CustomerLogin = () => {
     if (customer) 
     {
       sessionStorage.setItem('isCustomer', 'true');
-      alert(`Login successful! Welcome, ${customer.fullName}!`);
+      sessionStorage.setItem('customerUsername', customer.username);
+      sessionStorage.setItem('customerName', customer.fullName);
+      sessionStorage.setItem('customerEmail', customer.email);
+      sessionStorage.setItem('customerId', customer.id);
       console.log('Login successful:', customer);
       setFormData({
         username: '',
         password: '',
       });
-      navigate('/');
-      window.location.reload();
+      window.location.href = '/';
     } 
     else 
       {
