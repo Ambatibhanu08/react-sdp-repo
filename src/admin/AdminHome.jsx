@@ -2,7 +2,6 @@ import React from 'react';
 
 export default function AdminHome() {
   const adminUsername = sessionStorage.getItem('adminUsername') || 'Admin';
-  
   return (
     <div style={{ padding: '20px' }}>
       <h2>Welcome to Admin Dashboard</h2>

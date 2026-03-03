@@ -30,7 +30,6 @@ export default function AdminNavBar() {
           <li><button onClick={handleLogout} className="logout-btn">Logout</button></li>
         </ul>
       </nav>
-
       <div className="admin-content">
         <Routes>
           <Route path="/admin/home" element={<AdminHome />} />

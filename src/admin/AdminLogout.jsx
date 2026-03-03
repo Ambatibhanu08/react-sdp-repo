@@ -28,7 +28,7 @@ export default function AdminLogout() {
       alignItems: 'center',
       minHeight: '100vh',
       backgroundColor: '#f5f5f5'
-    }}>
+      }}> 
       <div style={{
         textAlign: 'center',
         backgroundColor: '#fff',
